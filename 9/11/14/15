@@ -1,0 +1,132 @@
+Experiment 1(9): Perform various GIT operations on Local and Remote Repositories
+Step 1: Check Git Installation
+git --version (checks whether git is installed)
+Step 2: Configure Git (Only Once)(for every experiment run this)
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+—for local Repositories—-
+Step 3: Create a Local Repository
+mkdir exp1 (create a folder on desktop)
+Open cmd in that folder
+git init
+Step 4: Create a File
+echo "This is experiment 1" > file1.txt
+Step 5: Check Repo Status
+git status
+Step 6: Add File to Staging
+git add file1.txt 
+
+Step 7: Commit the File
+git commit -m "Added file1 for experiment 1"
+(you can check new file will be added in the folder)
+
+—for remote Repositories—-
+Step 8: Add Remote Repository
+(You must create a new GitHub repo → copy URL)
+git remote add origin https://github.com/username/repo.git
+Step 9: Push to GitHub
+git branch -M main
+git push -u origin main
+Step 10: Pull New Changes From GitHub
+git pull origin main
+
+
+
+
+
+
+
+
+
+
+
+Experiment 2(11): Pull files from GitHub, Modify them, and Push back using Git
+Create a folder where you want to pull and open cmd in that folder
+Step 1: Clone Repository from GitHub
+git clone https://github.com/username/repo.git
+(the repo will be which project you want to pull)
+Step 2: Move into the Repository
+cd repo
+Step 3: Open a File & Make Changes
+Example:
+echo "New line added by Bhumika" >> notes.txt
+(you can open a file or makes changes in the existing file)
+Step 4: Check Status
+git status
+Step 5: Add Changed Files
+git add notes.txt
+Step 6: Commit Changes
+git commit -m "Updated notes.txt with new content"
+Step 7: Pull Before Push (Important!)
+git pull origin main
+Step 8: Push Changes to GitHub
+git push origin main
+(you can see new file will be pushed in the project)
+
+
+
+
+
+
+Experiment 3: Execute Basic Git Commands(14)
+ Basic Git Commands List
+Make a folder and open cmd in it
+ 1. Check Git Version
+git --version
+2. Initialize Git Repository
+git init
+3. Check Status
+git status
+4. Add File
+(before run this command [echo “my message” > filename])
+git add filename
+5. Add All Files
+git add .
+6. Commit Files
+git commit -m "Your commit message"
+7. Add Remote URL
+git remote add origin https://github.com/username/repo.git
+(first create a repo and take the url)
+
+8. Check Remote URL
+git remote -v
+9. Push to GitHub
+git push origin main
+
+10. Pull from GitHub
+git pull origin main
+11. Show Commit Log
+git log
+12. Create & Switch Branch
+git branch dev
+git checkout dev
+
+
+
+
+
+
+
+
+Experiment 4: Create Repository → Add File → Commit → Push to GitHub
+Step 1: Create New Folder
+Create a folder and open cmd in it
+Mkdir exp4
+Cd exp4
+Step 2: Initialize Git
+git init
+Step 3: Create a New File
+echo "Experiment 4 file" > test.txt
+Step 4: Add the File
+git add test.txt
+Step 5: Commit the File
+git commit -m "Added test.txt for experiment 4"
+Step 6: Create New GitHub Repository
+Go to GitHub → New Repository → Copy HTTPS URL.
+Step 7: Add Remote Origin
+git remote add origin https://github.com/username/exp4.git
+git remote set-url origin https://github.com/Madhura281/myrepository.git
+
+Step 8: Set Branch & Push
+git branch -M main
+git push -u origin main
