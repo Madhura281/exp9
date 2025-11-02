@@ -1,0 +1,10 @@
+Compile project in Jenkins using Maven.(4)
+Step 1: 
+Go to new item -> create a freestyle project
+Step 2: 
+Under source code management choose git and paste the url repo there
+https://github.com/bhumikabhoir11-web/maven-project.git
+Step 3: 
+Under build steps in goals write “clean install”
+Step 4: apply and save
+Step 5: build now
